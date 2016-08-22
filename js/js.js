@@ -13,7 +13,7 @@ function chessBoxFun(rows){//rows表示我需要的行数
         for(var j=0;j<=cols;j++)//横坐标
         {
             arr[i][j]=false;//变成二维数组,false表示没有落子
-            if(i!=cols && j!=rows){
+            if(i!=rows && j!=cols ){
                 var li=document.createElement('li');//创建li
                 frag.appendChild(li);//写入碎片
             }
