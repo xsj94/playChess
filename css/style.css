@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+img {
+    border: 0 none;
+}
+
+body{
+    background:#cc7a52;
+}
+
+/*五子棋*/
+.chessman{ position:absolute; left:50%; margin-left:-650px; top:50px;}
+.black,.white{ position:absolute; left:50px; top:0; border-radius:50%; box-shadow:2px 2px 8px #000; width:30px; height:30px;}
+.black{
+    background: -webkit-radial-gradient(#999, #222, #000); /* Safari 5.1 - 6.0 */
+    background: -o-radial-gradient(#999, #222, #000); /* Opera 11.6 - 12.0 */
+    background: -moz-radial-gradient(#999, #222, #000); /* Firefox 3.6 - 15 */
+    background: radial-gradient(#999, #222, #000); /* 标准的语法 */
+}
+.white{
+    background: -webkit-radial-gradient(#ccc, #eee, #fff); /* Safari 5.1 - 6.0 */
+    background: -o-radial-gradient(#ccc, #eee, #fff); /* Opera 11.6 - 12.0 */
+    background: -moz-radial-gradient(#ccc, #eee, #fff); /* Firefox 3.6 - 15 */
+    background: radial-gradient(#ccc, #eee, #fff); /* 标准的语法 */
+}
+.current{ position:absolute; font-style:normal; font-size:30px; line-height:30px;}
+.start{ position:absolute; width:80px; left: 10px; top:180px; background:#000; color:#fff; text-align:center; line-height:30px; font-size: 16px; font-weight:bold; cursor:pointer; border-radius:5px;  font-style:normal;}
+#chessBox{ position: relative; width:1000px; margin:50px auto 0;}
+#chessBox ul{ width:100%; padding:0 3px 3px 0;}
+#chessBox li{ float:left; width:37px; height:37px; border:3px double #000; list-style:none; margin:0 -3px -3px 0;}
